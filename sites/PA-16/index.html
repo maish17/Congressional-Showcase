@@ -13,9 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* ─────────────────────────────────────────
-       RESET & TOKENS
-    ───────────────────────────────────────── */
+    
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -42,9 +40,7 @@
       --radius-pill:   999px;
     }
 
-    /* ─────────────────────────────────────────
-       BASE
-    ───────────────────────────────────────── */
+
     html { scroll-behavior: smooth; }
 
     body {
@@ -55,9 +51,7 @@
       overflow-x: hidden;
     }
 
-    /* ─────────────────────────────────────────
-       PAGE LOAD PROGRESS BAR
-    ───────────────────────────────────────── */
+    
     .progress-bar {
       position: fixed;
       top: 0; left: 0;
@@ -73,18 +67,13 @@
       100% { width: 100%; opacity: 0; }
     }
 
-    /* ─────────────────────────────────────────
-       LAYOUT
-    ───────────────────────────────────────── */
     .container {
       max-width: 820px;
       margin: 0 auto;
       padding: 3rem 2rem 4rem;
     }
 
-    /* ─────────────────────────────────────────
-       HERO HEADER
-    ───────────────────────────────────────── */
+    
     header {
       text-align: center;
       margin-bottom: 1.75rem;
@@ -127,7 +116,6 @@
       to   { background-position: 200px 0; }
     }
 
-    /* Radial glow behind the name */
     header::after {
       content: '';
       position: absolute;
@@ -138,7 +126,6 @@
       pointer-events: none;
     }
 
-    /* Header children stagger in */
     .header-badge,
     header h1,
     .header-sub,
@@ -228,9 +215,7 @@
       50%       { transform: translateY(-4px); }
     }
 
-    /* ─────────────────────────────────────────
-       AWARD BANNER — shimmer sweep
-    ───────────────────────────────────────── */
+    
     .award-banner {
       display: flex;
       align-items: center;
@@ -251,7 +236,6 @@
       50%       { background-position: 100% 50%; }
     }
 
-    /* sweep highlight */
     .award-banner::after {
       content: '';
       position: absolute;
@@ -291,9 +275,7 @@
       color: #b45309;
     }
 
-    /* ─────────────────────────────────────────
-       SCROLL-REVEAL — base state
-    ───────────────────────────────────────── */
+    
     .reveal {
       opacity: 0;
       transform: translateY(24px);
@@ -305,9 +287,7 @@
       transform: translateY(0);
     }
 
-    /* ─────────────────────────────────────────
-       CARDS
-    ───────────────────────────────────────── */
+   
     section {
       background: var(--card);
       border-radius: var(--radius-card);
@@ -323,7 +303,6 @@
       transform: translateY(-2px);
     }
 
-    /* Animated left accent bar on hover */
     section {
       position: relative;
       overflow: hidden;
@@ -341,9 +320,6 @@
     }
     section:hover::before { transform: scaleY(1); }
 
-    /* ─────────────────────────────────────────
-       SECTION HEADERS
-    ───────────────────────────────────────── */
     .section-header {
       display: flex;
       align-items: center;
@@ -385,9 +361,7 @@
     p:last-child { margin-bottom: 0; }
     p em { color: var(--green-deep); font-style: italic; }
 
-    /* ─────────────────────────────────────────
-       STAT ROW — count-up numbers
-    ───────────────────────────────────────── */
+    
     .stat-row {
       display: flex;
       gap: 0.85rem;
@@ -425,9 +399,7 @@
       margin-top: 0.35rem;
     }
 
-    /* ─────────────────────────────────────────
-       TECH PILLS — staggered entrance
-    ───────────────────────────────────────── */
+    
     .tech-stack {
       display: flex;
       flex-wrap: wrap;
@@ -464,9 +436,7 @@
     .tech-pill.blue  { background: #eff6ff;            color: #1e40af;          border-color: #bfdbfe; }
     .tech-pill.gray  { background: #f3f4f6;            color: #374151;          border-color: #d1d5db; }
 
-    /* ─────────────────────────────────────────
-       VIDEO
-    ───────────────────────────────────────── */
+    
     .video-wrapper {
       width: 100%;
       aspect-ratio: 16 / 9;
@@ -487,9 +457,7 @@
       border: none; display: block;
     }
 
-    /* ─────────────────────────────────────────
-       LINKS
-    ───────────────────────────────────────── */
+    
     .link-row {
       display: flex;
       flex-wrap: wrap;
@@ -510,7 +478,7 @@
       overflow: hidden;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    /* ripple base */
+    
     .link-btn::after {
       content: '';
       position: absolute;
@@ -541,9 +509,7 @@
       box-shadow: 0 6px 18px rgba(217,119,6,0.25);
     }
 
-    /* ─────────────────────────────────────────
-       FOOTER
-    ───────────────────────────────────────── */
+    
     footer {
       text-align: center;
       padding: 1rem 2rem 2.5rem;
@@ -553,9 +519,7 @@
       animation: fade-up 0.6s 0.4s ease forwards;
     }
 
-    /* ─────────────────────────────────────────
-       RESPONSIVE
-    ───────────────────────────────────────── */
+    
     @media (max-width: 600px) {
       header { padding: 3rem 1.5rem 2.5rem; }
       header h1 { font-size: 2.2rem; }
